@@ -1,5 +1,5 @@
 <div class="scanner-shell" [hidden]="!hasDevices">
-  <mat-menu #appMenu="matMenu">
+  <!-- <mat-menu #appMenu="matMenu">
     <mat-selection-list>
       <mat-list-option (click)="toggleTryHarder()" [selected]="tryHarder">
         Enable Try-harder
@@ -13,9 +13,8 @@
       </mat-list-option>
     </mat-selection-list>
     <mat-divider></mat-divider>
-    <!-- <button mat-menu-item (click)="openFormatsDialog()">Barcode formats</button>
-    <button mat-menu-item (click)="openInfoDialog()">App info</button> -->
-  </mat-menu>
+
+  </mat-menu> -->
 
   <header>
     <mat-form-field appearance="fill">
@@ -36,9 +35,9 @@
         </option>
       </select>
     </mat-form-field>
-    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <!-- <button mat-icon-button [matMenuTriggerFor]="appMenu">
       <mat-icon>more_vert</mat-icon>
-    </button>
+    </button> -->
   </header>
 
   <zxing-scanner
