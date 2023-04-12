@@ -7,9 +7,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
 import { BrowserMultiFormatReader, IScannerControls } from '@zxing/browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UimoduleModule } from './uimodule/uimodule.module';
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, ZXingScannerModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    ZXingScannerModule,
+    BrowserAnimationsModule,
+    UimoduleModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
